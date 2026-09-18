@@ -1,0 +1,1137 @@
+/* ============================================
+   ELISMOS INTERNATIONAL - RESPONSIVE STYLES
+   Mobile-First Responsive Design
+   ============================================ */
+
+/* ============================================
+   EXTRA SMALL - MOBILE PORTRAIT (max 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    :root {
+        --space-xl: 1.5rem;
+        --space-2xl: 2rem;
+        --space-3xl: 2.5rem;
+        --space-4xl: 3rem;
+        --space-5xl: 4rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1.125rem;
+    }
+
+    /* Hero Section Mobile */
+    .hero {
+        min-height: auto;
+        padding: 100px 0 var(--space-2xl);
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+        padding: 100px var(--space-md) var(--space-2xl);
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: var(--text-sm);
+    }
+
+    .hero-visual {
+        height: 200px;
+        order: -1;
+    }
+
+    .hero-visual-content {
+        border-radius: var(--radius-md);
+    }
+
+    .hero-stats {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: var(--space-md);
+        padding: var(--space-md);
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-radius: var(--radius-md);
+    }
+
+    .hero-stat {
+        padding: var(--space-sm);
+        border-right: none;
+        flex: 1 1 100%;
+        min-width: auto;
+        border-bottom: 1px solid rgba(233, 231, 225, 0.1);
+    }
+
+    .hero-stat:last-child {
+        border-bottom: none;
+    }
+
+    .hero-stat-number {
+        font-size: 1.5rem;
+    }
+
+    .hero-stat-label {
+        font-size: 0.65rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-label {
+        font-size: 0.6rem;
+        padding: 0.35rem 0.6rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    .btn-lg {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+    }
+
+    /* Services Page Mobile */
+    .services-matrix {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .service-card {
+        padding: 1.25rem;
+        min-height: auto;
+    }
+
+    .service-card-number {
+        font-size: 1.5rem;
+    }
+
+    .service-card-title {
+        font-size: var(--text-base);
+    }
+
+    /* Service Sections Mobile - Stack vertically */
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .grid-2 > div {
+        grid-column: 1 / -1;
+    }
+
+    .service-section img,
+    .grid-2 img {
+        width: 100%;
+        height: 250px !important;
+        object-fit: cover;
+        order: -1;
+    }
+
+    .service-features li {
+        padding-left: var(--space-xl);
+        font-size: var(--text-sm);
+    }
+
+    .service-features li::before {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .section {
+        padding: var(--space-2xl) 0;
+    }
+
+    .container {
+        padding: 0 var(--space-md);
+    }
+
+    /* Projects */
+    .projects-filter {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-lg);
+    }
+
+    .filter-dropdown-wrapper {
+        width: 100%;
+    }
+
+    .filter-dropdown {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .filter-dropdown-trigger {
+        width: 100%;
+    }
+
+    .filter-dropdown-menu {
+        width: 100%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Safety */
+    .safety-framework {
+        grid-template-columns: 1fr;
+    }
+
+    .safety-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .policy-step {
+        padding: 1rem;
+    }
+
+    /* Solar */
+    .solar-flow {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .solar-arrow {
+        transform: rotate(90deg);
+        padding: var(--space-sm) 0;
+    }
+
+    /* Contact */
+    .contact-grid {
+        margin: 0;
+        gap: var(--space-lg);
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form-wrapper {
+        margin: 0;
+        padding: 1.5rem;
+        border-radius: var(--radius-lg);
+    }
+
+    .contact-info {
+        margin-bottom: var(--space-md);
+    }
+
+    .contact-quick-actions {
+        flex-direction: column;
+    }
+
+    .contact-quick-actions .btn {
+        width: 100%;
+    }
+
+    .contact-form-element .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Quote */
+    .quote-section {
+        padding: 1rem;
+    }
+
+    .quote-sidebar {
+        margin-top: var(--space-2xl);
+    }
+
+    .next-steps li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-number {
+        margin: 0 auto var(--space-sm);
+    }
+
+    .step-content {
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .footer {
+        padding: 2rem 1rem 1rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .footer-legal {
+        justify-content: center;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+
+    /* Page Hero */
+    .page-hero {
+        min-height: 40vh;
+    }
+
+    .page-hero-content {
+        padding: 120px var(--space-md) var(--space-xl);
+    }
+
+    .hero-label {
+        font-size: 0.65rem;
+        padding: 0.4rem 0.75rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: var(--space-2xl);
+    }
+
+    .cta-actions {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .cta-actions .btn {
+        width: 100%;
+    }
+
+    /* Values */
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Industries */
+    .industries-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Leadership */
+    .leadership-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .leadership-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: var(--space-lg);
+        background-color: var(--elismos-white);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--elismos-off-white);
+    }
+
+    .leadership-image {
+        width: 120px;
+        height: 150px;
+        margin: 0 auto var(--space-lg);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+    }
+
+    .leadership-info h3 {
+        font-size: var(--text-lg);
+        margin-bottom: var(--space-xs);
+    }
+
+    .leadership-role {
+        font-size: var(--text-sm);
+        margin-bottom: var(--space-md);
+    }
+
+    .leadership-bio {
+        font-size: var(--text-sm);
+        line-height: 1.6;
+    }
+
+    /* Section headers */
+    .section-header {
+        margin-bottom: var(--space-2xl);
+    }
+
+    .section-label {
+        font-size: 0.65rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-description {
+        font-size: var(--text-sm);
+    }
+}
+
+/* ============================================
+   SMALL - MOBILE LANDSCAPE (481px to 768px)
+   ============================================ */
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 var(--space-2xl);
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 100px var(--space-lg) var(--space-2xl);
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-visual {
+        height: 250px;
+        order: -1;
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+
+    .hero-stats {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: var(--space-md);
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero-stat {
+        flex: 1 1 30%;
+        min-width: 100px;
+        border-right: 1px solid rgba(233, 231, 225, 0.15);
+    }
+
+    .hero-stat:last-child {
+        border-right: none;
+    }
+
+    /* Services */
+    .services-matrix {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Service Sections - Stack on mobile */
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    .grid-2 > div {
+        grid-column: 1 / -1;
+    }
+
+    .service-section img,
+    .grid-2 img {
+        width: 100%;
+        height: 300px !important;
+        object-fit: cover;
+        order: -1;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .leadership-card {
+        grid-template-columns: 120px 1fr;
+    }
+
+    .leadership-image {
+        width: 120px;
+        height: 150px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-grid {
+        margin: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form-wrapper {
+        margin: 0;
+        border-radius: var(--radius-lg);
+    }
+
+    .contact-info {
+        margin-bottom: var(--space-lg);
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+/* ============================================
+   MEDIUM - TABLET (769px to 1024px)
+   ============================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-content {
+        gap: 3rem;
+    }
+
+    .hero-visual {
+        height: 400px;
+    }
+
+    .services-matrix {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .safety-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Service Sections Tablet */
+    .service-section img,
+    .grid-2 img {
+        height: 350px !important;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        max-width: none;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .contact-grid {
+        margin: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form-wrapper {
+        margin: 0;
+        border-radius: var(--radius-lg);
+    }
+}
+
+/* ============================================
+   LARGE - SMALL DESKTOP (1025px to 1280px)
+   ============================================ */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .hero-content {
+        gap: 3rem;
+    }
+
+    .hero-visual {
+        height: 450px;
+    }
+
+    .services-matrix {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .service-card-number {
+        font-size: 2rem;
+    }
+
+    /* Service Sections Large Desktop */
+    .service-section img,
+    .grid-2 img {
+        height: 380px !important;
+    }
+}
+
+/* ============================================
+   EXTRA LARGE - DESKTOP (1281px to 1440px)
+   ============================================ */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero-content {
+        gap: 4rem;
+    }
+
+    .hero-visual {
+        height: 500px;
+    }
+
+    .services-matrix {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* ============================================
+   ULTRA - LARGE DESKTOP (1441px+)
+   ============================================ */
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .hero-content {
+        gap: 5rem;
+    }
+
+    .hero-visual {
+        height: 550px;
+    }
+
+    .services-matrix {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .safety-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    }
+
+    /* Service Sections Ultra Desktop */
+    .service-section img,
+    .grid-2 img {
+        height: 420px !important;
+    }
+}
+
+/* ============================================
+   GRID UTILITIES RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-responsive {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-responsive-2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Capability Cards */
+    .capability-card {
+        padding: var(--space-xl);
+        text-align: center;
+    }
+
+    .capability-icon {
+        font-size: var(--text-3xl);
+        margin-bottom: var(--space-md);
+    }
+
+    .capability-card h4 {
+        font-size: var(--text-base);
+        margin-bottom: var(--space-sm);
+    }
+
+    .capability-card p {
+        font-size: var(--text-sm);
+        line-height: 1.5;
+    }
+
+    /* Resource Cards */
+    .resource-card {
+        padding: var(--space-xl);
+        text-align: center;
+        background-color: var(--elismos-white);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--elismos-off-white);
+    }
+
+    .resource-icon {
+        font-size: var(--text-3xl);
+        margin-bottom: var(--space-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto var(--space-md);
+        background-color: var(--elismos-warm-white);
+        border-radius: var(--radius-full);
+    }
+
+    .resource-card h3 {
+        font-size: var(--text-lg);
+        margin-bottom: var(--space-sm);
+    }
+
+    .resource-card p {
+        font-size: var(--text-sm);
+        line-height: 1.6;
+    }
+
+    /* Value Descriptions */
+    .values-descriptions .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .value-description {
+        padding: var(--space-lg);
+        background-color: var(--elismos-white);
+        border-radius: var(--radius-md);
+        border: 1px solid var(--elismos-off-white);
+    }
+
+    .value-description h4 {
+        font-size: var(--text-base);
+        margin-bottom: var(--space-sm);
+    }
+
+    .value-description p {
+        font-size: var(--text-sm);
+        line-height: 1.6;
+    }
+
+    /* Stat Cards */
+    .stat-card {
+        padding: var(--space-xl);
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: var(--radius-md);
+    }
+
+    .stat-number {
+        font-size: var(--text-4xl);
+        display: block;
+        margin-bottom: var(--space-sm);
+    }
+
+    .stat-label {
+        font-size: var(--text-xs);
+        color: var(--elismos-steel);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    /* Mission/Vision Content */
+    .mission-content p,
+    .vision-content p {
+        font-size: var(--text-base);
+        line-height: 1.7;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .project-card {
+        border-radius: var(--radius-md);
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: var(--space-lg);
+    }
+
+    .project-title {
+        font-size: var(--text-lg);
+    }
+
+    .project-excerpt {
+        font-size: var(--text-sm);
+    }
+
+    /* About Visual */
+    .about-visual img {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: var(--radius-lg);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-responsive-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+.hide-mobile {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .hide-mobile {
+        display: block;
+    }
+
+    .show-mobile {
+        display: none;
+    }
+}
+
+/* ============================================
+   MOBILE NAVIGATION ENHANCEMENTS
+   ============================================ */
+@media (max-width: 768px) {
+    .navbar-inner {
+        padding: 0 1rem;
+    }
+
+    .navbar-logo img {
+        height: 32px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-cta {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .mobile-menu {
+        padding: 80px 1.5rem 2rem;
+    }
+
+    .mobile-menu-link {
+        font-size: 1.5rem;
+        padding: 1.25rem 0;
+    }
+
+    .mobile-menu-cta {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(233, 231, 225, 0.1);
+    }
+
+    .mobile-menu-cta .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================
+   TOUCH-FRIENDLY INTERACTIONS
+   ============================================ */
+@media (hover: none) and (pointer: coarse) {
+    .service-card:hover,
+    .industry-card:hover,
+    .project-card:hover,
+    .project-card:hover .project-image img,
+    .value-card:hover,
+    .safety-card:hover,
+    .diagram-node:hover,
+    .btn:hover {
+        transform: none;
+    }
+}
+
+/* ============================================
+   TIMELINE RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 40px;
+        max-width: 100%;
+    }
+
+    .timeline::before {
+        left: 12px;
+        width: 2px;
+    }
+
+    .timeline-item {
+        padding-left: var(--space-lg);
+        margin-bottom: var(--space-xl);
+    }
+
+    .timeline-item::before {
+        left: -34px;
+        width: 12px;
+        height: 12px;
+        border-width: 3px;
+    }
+
+    .timeline-year {
+        position: relative;
+        left: 0;
+        width: auto;
+        text-align: left;
+        margin-bottom: var(--space-sm);
+        display: block;
+        font-size: var(--text-sm);
+    }
+
+    .timeline-content {
+        padding: var(--space-lg);
+        border-radius: var(--radius-md);
+    }
+
+    .timeline-content h3 {
+        font-size: var(--text-lg);
+        margin-bottom: var(--space-sm);
+    }
+
+    .timeline-content p {
+        font-size: var(--text-sm);
+        line-height: 1.6;
+    }
+
+    /* Solar Flow Simple */
+    .solar-flow-simple {
+        flex-direction: column;
+        gap: var(--space-sm);
+        padding: var(--space-lg);
+    }
+
+    .solar-flow-simple .solar-step {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .solar-flow-simple .solar-arrow {
+        transform: rotate(90deg);
+        font-size: var(--text-xl);
+    }
+
+    .solar-flow-simple .solar-text {
+        font-size: var(--text-sm);
+        letter-spacing: 0.02em;
+    }
+
+    /* Energy Path - keep nodes on one row like desktop; the vertical
+       stack made the data-labels collide with the dots above them */
+    .energy-path {
+        flex-direction: row;
+        gap: var(--space-md);
+        padding: var(--space-xl) 0;
+    }
+
+    .energy-path-line {
+        width: 100%;
+        height: 3px;
+        margin: 0;
+    }
+
+    .energy-path-progress {
+        width: 0;
+        height: 100%;
+    }
+
+    .energy-path-node {
+        width: 22px;
+        height: 22px;
+    }
+
+    .energy-path-node::after {
+        font-size: 0.55rem;
+    }
+
+    /* About Visual */
+    .about-visual img {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+/* ============================================
+   GRID UTILITIES RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .grid-responsive {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-responsive-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .grid-responsive-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    .navbar,
+    .mobile-menu,
+    .whatsapp-float,
+    .footer,
+    .btn,
+    .scroll-progress,
+    .loading-overlay {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #000;
+        page-break-after: avoid;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    .section {
+        padding: 1rem 0;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+@media (prefers-contrast: high) {
+    :root {
+        --elismos-blue: #066A9A;
+        --elismos-text: #000000;
+        --elismos-text-light: #333333;
+    }
+
+    .btn {
+        border-width: 3px;
+    }
+
+    .navbar-link::after {
+        height: 3px;
+    }
+
+    .service-card,
+    .project-card,
+    .safety-card,
+    .value-card {
+        border-width: 2px;
+    }
+}

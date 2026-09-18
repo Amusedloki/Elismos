@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - Elismos International Limited">
+    <title>Page Not Found - Elismos International Limited</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, var(--elismos-navy) 0%, var(--elismos-navy-light) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .error-page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        
+        .error-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .error-code {
+            font-size: clamp(6rem, 15vw, 12rem);
+            font-weight: 800;
+            color: var(--elismos-blue);
+            line-height: 1;
+            margin-bottom: var(--space-lg);
+            text-shadow: 0 0 40px rgba(0, 159, 227, 0.3);
+        }
+        
+        .error-title {
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--elismos-white);
+            margin-bottom: var(--space-md);
+        }
+        
+        .error-message {
+            font-size: var(--text-lg);
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: var(--space-2xl);
+            max-width: 500px;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .error-logo {
+            position: absolute;
+            top: var(--space-xl);
+            left: var(--space-xl);
+            z-index: 10;
+        }
+        
+        .error-logo a {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-size: var(--text-xl);
+            font-weight: 800;
+            color: var(--elismos-white);
+            text-decoration: none;
+        }
+        
+        .error-logo img {
+            height: 40px;
+        }
+        
+        .error-home-link {
+            color: var(--elismos-white);
+            text-decoration: none;
+            font-size: var(--text-sm);
+            margin-top: var(--space-2xl);
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+        
+        .error-home-link:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<!-- DEMO CONTENT — REPLACE BEFORE LAUNCH -->
+
+    <div class="error-page">
+        <div class="error-logo">
+            <a href="index.html">
+                <img src="assets/logo/logo.png" alt="Elismos Logo" style="height: 60px; width: auto;">
+                <span>ELISMOS</span>
+            </a>
+        </div>
+        
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">SYSTEM PATH NOT FOUND</h1>
+            <p class="error-message">
+                The page you're looking for doesn't exist or has been moved. Let's get you back on track.
+            </p>
+            
+            <div class="error-actions">
+                <a href="index.html" class="btn btn-lime btn-lg">Return to Elismos →</a>
+                <a href="contact.html" class="btn btn-ghost btn-lg">Contact Us</a>
+            </div>
+            
+            <a href="index.html" class="error-home-link">
+                ← Back to Homepage
+            </a>
+        </div>
+    </div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>
